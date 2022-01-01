@@ -1,32 +1,39 @@
 #content {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(150px, auto);
-  gap: 10px;
-  transform: rotate(45deg) scale(0.5);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-areas:
+    "header header header header"
+    "aside aside main main"
+    "nav nav main main"
+    "section section section section"
+    "section section section section"
+    "footer footer footer footer";
 }
 
-.one {
-  grid-column: 1 / 3;
-  grid-row: 1 / span 4;
+header {
+  grid-area: header;
 }
 
-.two {
-  grid-column: 3 / 7;
-  grid-row: 1 / 3;
+main {
+  grid-area: main;
 }
 
-.three {
-  grid-column: 3 / 5;
-  grid-row: 3 / 5;
+aside {
+  grid-area: aside;
 }
 
-.four {
-  grid-column: 5 / 7;
-  grid-row: 3 / 7;
+nav {
+  grid-area: nav;
 }
 
-.five {
-  grid-column: 1 / 5;
-  grid-row: 5 / 7;
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
 }

@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-#content div {
-  background: #333;
+#content > * {
+  background: #3bbced;
   padding: 30px;
 }
