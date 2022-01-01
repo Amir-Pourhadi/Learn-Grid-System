@@ -35,3 +35,15 @@
   grid-row: 4;
   grid-column: 1 / 3;
 }
+
+.nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.nested p {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 0;
+}
