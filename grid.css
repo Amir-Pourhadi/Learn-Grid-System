@@ -7,11 +7,24 @@
   margin: 0 auto;
   grid-template-areas:
     "header header header header"
-    "aside aside main main"
-    "nav nav main main"
+    "footer footer footer footer"
+    "main main main main"
+    "main main main main"
+    "aside aside nav nav"
     "section section section section"
-    "section section section section"
-    "footer footer footer footer";
+    "section section section section";
+}
+
+@media only screen and (min-width: 760px) {
+  #content {
+    grid-template-areas:
+      "header header header header"
+      "aside aside main main"
+      "nav nav main main"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
 }
 
 header {
