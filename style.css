@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
 body {
   color: #fff;
-  font-family: "Nunito Semibold";
+  font-family: "Nunito Semibold", sans-serif;
   text-align: center;
 }
 
@@ -9,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-#content > * {
-  background: #3bbced;
+#content div {
+  background: #333;
   padding: 30px;
 }
